@@ -1,0 +1,107 @@
+.clients {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: black;
+    color: white;
+    &__label {
+        position: relative;
+        width: 570px;
+        margin-top: 50px;
+        margin-left: 20px;
+        &--1 {
+            font-size: 35px;
+        }
+        &--2 {
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+        &:before {
+            position: absolute;
+            top: 15px;
+            left: -20px;
+            right: 0;
+            bottom: 0;
+            content: '';
+            height: 80%;
+            width: 2px;
+            background: #e8bf5d;
+        }
+    }
+    &__slider {
+        margin-top: 100px;
+        width: 100%;
+    }
+    &__slider-item {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    &__slider-item--logo {
+        width: 210px;
+        height: 190px;
+        &-1 {
+            background: url('../images/block3_icon1.png') no-repeat center / contain;
+        }
+         &-2 {
+            background: url('../images/block2_icon3.png') no-repeat center / contain;
+        }
+         &-3 {
+            background: url('../images/block2_icon4.png') no-repeat center / contain;
+        }
+    }
+    &__slider-item--label {
+        width: 665px;
+        height: auto;
+        margin-top: 20px;
+        position: relative;
+        font-size: 14px;
+        &:before {
+            position: absolute;
+            content: '“';
+            top: -30px;
+            left: -35px;
+            right: 0;
+            bottom: 0;
+            width: 20px;
+            height: 20px;
+            color: #545352;
+            font-size: 70px;
+        }
+    }
+    &__slider-item--title {
+        margin-top: 30px;
+        letter-spacing: 1px;
+        font-size: 25px;
+    }
+    &__slider-item--subtitle {
+        font-size: 13px;
+    }
+    &__slider-counter {
+        margin: 0 auto;
+        margin-top: 70px;
+        margin-bottom: 90px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        background: transparent;
+    }
+    &__slider-dot {
+        background: black;
+        height: 14px;
+        width: 14px;
+        border-radius: 100px;
+        margin-right: 22px;
+        transition: background .2s ease;
+        will-change: background;
+        cursor: pointer;
+        border: 1px solid white;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.clients__slider-dot--active {
+            background: white;
+        }
+    }
+}

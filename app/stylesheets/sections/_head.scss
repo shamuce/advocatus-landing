@@ -1,0 +1,94 @@
+    .head {
+        height: 100vh;
+        min-height: 700px;
+        position: relative;
+        &__logo {
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        &__menu {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 15%;
+        }
+        &__nav {
+            position: relative;
+            top: 5px;
+        }
+        &__nav-item {
+        	font-family: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            margin-right: 40px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 16px;
+            color: black;
+            border: 0;
+            transition: border .2s ease;
+            will-change: border;
+            outline: none;
+            padding-bottom: 10px;
+        }
+        &__nav-item:hover {
+            border-bottom: 3px solid #e8bf5d;
+        }
+        &__nav-item:focus {
+            outline: none;
+        }
+        &__title {
+            height: 85%;
+            background: url('../images/head.png') no-repeat center center;
+            background-size: cover;
+        }
+        &__position {
+            height: 85%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: flex-end;
+            align-content: flex-end;
+        }
+        &__title-label {
+            position: relative;
+            width: 570px;
+            color: white;
+            &--1 {
+                font-size: 45px;
+            }
+            &--2 {
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+            &:before {
+                position: absolute;
+                top: 15px;
+                left: -20px;
+                right: 0;
+                bottom: 0;
+                content: '';
+                height: 80%;
+                width: 2px;
+                background: #e8bf5d;
+            }
+        }
+        &__title-btn {
+            cursor: pointer;
+            background: #e8bf5d;
+            border-radius: 20px;
+            padding: 10px 30px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background .2s ease;
+            will-change: background;
+        }
+        &__title-btn:hover {
+            background: #e7af29;
+        }
+    }
